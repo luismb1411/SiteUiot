@@ -1,0 +1,68 @@
+/* src/components/Navbar/Navbar.css */
+
+/* Variáveis de cor para fácil customização */
+:root {
+  --navbar-bg-color: #6f71bc; /* Cor de fundo roxa/azulada da imagem */
+  --navbar-text-color: #ffffff; /* Cor do texto e logo */
+  --navbar-hover-color: #5634a4; /* Cor do texto ao passar o mouse */
+}
+
+.navbar {
+  background-color: #6f71bc;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.navbar-logo {
+  color: var(--navbar-text-color);
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: var(--navbar-hover-color);
+}
