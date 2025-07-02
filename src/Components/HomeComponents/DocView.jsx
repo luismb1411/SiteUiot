@@ -61,7 +61,7 @@ const DocView = () => {
               </a>
             ))}
             <Link
-              to="publicacoes"
+              to="Publications"
               className="publication-item more-publications-link"
             >
               Outras Publicações

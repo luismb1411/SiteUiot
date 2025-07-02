@@ -2,12 +2,23 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: #f9fafb;
+  color: #475467;
 }
+
 .container {
   width: 100%;
-  max-width: 1200px; /* Largura máxima do conteúdo */
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem; /* Espaçamento lateral padrão (32px) */
-  padding-right: 2rem; /* Espaçamento lateral padrão (32px) */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+main > .section:first-child {
+  padding-top: calc(80px + 6rem); /* 80px da navbar + 96px de espaçamento */
 }

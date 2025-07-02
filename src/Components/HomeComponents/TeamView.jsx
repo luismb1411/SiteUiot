@@ -19,7 +19,7 @@ const teamData = [
       github: "#",
       linkedin: "#",
       lattes: "#",
-      email: "mailto:email@example.com",
+      email: "mailto:luis.mb1411@gmail.com",
     },
   },
   {
@@ -111,7 +111,7 @@ const TeamView = () => {
             ))}
           </div>
 
-          <Link to="/equipe" className="see-more-link">
+          <Link to="/Team" className="see-more-link">
             <span>Conheça o resto da nossa equipe</span>
             <img src={IconArrow} alt="Ver mais" />
           </Link>
