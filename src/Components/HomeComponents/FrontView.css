@@ -1,11 +1,11 @@
 .frontview-section {
-  background-color: #6f71bc; /* Cor roxa principal */
+  background-color: #6f71bc;
   color: #ffffff;
   padding: 6rem 0;
   display: flex;
   justify-content: center;
   padding-top: calc(80px + 6rem);
-  padding-left: 6rem; /* Espaçamento lateral padrão (32px) */
+  padding-left: 6rem;
   padding-right: 6rem;
 }
 .frontview-container {

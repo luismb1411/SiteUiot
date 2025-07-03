@@ -15,15 +15,15 @@ const projectsData = [
   },
   {
     icon: iconMiddleware,
-    title: "Middleware",
+    title: "Hardware",
     description:
-      "Lorem ipsum dolor sit amet. Ut pariatur earum est quae facilis sit voluptatibus quisquam.",
+      "O setor de hardware do laboratório desenvolve dispositivos para coletar dados do ambiente, utilizando tecnologias como Raspberry Pi, Arduino, sensores e protocolos de comunicação (HTTP, LoRA).",
   },
   {
     icon: iconSoftware,
     title: "Software",
     description:
-      "São responsáveis por criar soluções IoT em software e desenvolver toda a infraestrutura necessária para coletar os dados dos dispositivos físicos, armazená-los, processá-los e entregar uma visualização/interação de qualidade para o usuário.",
+      "Responsáveis por desenvolver o software e a infraestrutura de soluções IoT, desde a coleta de dados dos dispositivos até a interface final para o usuário.",
   },
   {
     icon: iconConteiner,

@@ -5,30 +5,35 @@ import { Link } from "react-router-dom";
 import "./DocView.css";
 
 const publicationsData = [
-  { title: "HIDS distribuído expans JNIC", year: "2023", url: "#" },
   {
     title:
       "Meta-Semantic Search Engine Method Proposition for Transparent Decision Auditing",
     year: "2022",
-    url: "#",
+    url: "https://www.scitepress.org/Papers/2022/113567/113567.pdf",
   },
   {
     title:
       "Sistema para a identificação de aglomerações operando em Redes IoT e Fog Computing",
     year: "2022",
-    url: "#",
+    url: "https://www.proquest.com/docview/2648272139?pq-origsite=gscholar&fromopenview=true&sourcetype=Scholarly%20Journals",
   },
   {
     title:
       "Design and Evaluation of a Data Collector and Analyzer to Monitor the COVID-19 and other Epidemic Outbreaks",
     year: "2021",
-    url: "#",
+    url: "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_3",
   },
   {
     title:
       "Design of a Fog Controller to Provide an IoT Middleware with Hierarchical Interaction Capability",
     year: "2021",
-    url: "#",
+    url: "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_27",
+  },
+  {
+    title:
+      "Data Science Procedures to Aggregate Unstructured Disease Data in Georeferenced Spreading Analysis",
+    year: "2021",
+    url: "https://link.springer.com/chapter/10.1007/978-3-030-72660-7_61",
   },
 ];
 

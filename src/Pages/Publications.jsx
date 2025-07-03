@@ -1,44 +1,29 @@
 import React, { useState } from "react";
-import "./Publications.css"; // Estilos específicos para esta página
+import "./Publications.css";
 import iconSearch from "../assets/Icons/iconSearch.svg";
+import { allPublications } from "../Data/Publs";
 
-// Dados das publicações. Em um projeto real, isso viria de uma API.
-const allPublications = [
-  {
-    title: "HIDS distribuído expans JNIC 2019",
-    authors:
-      "Francisco de Caldas Filho, Samuel Almeida, Robson de O. Albuquerque, Fábio L. L. de Mendonça",
-    venue: "JNIC",
-    year: "2022",
-    url: "#",
-  },
-  {
-    title:
-      "Meta-Semantic Search Engine Method Proposition for Transparent Decision Auditing",
-    authors: "Francisco de Caldas Filho",
-    venue: "ICISRT",
-    year: "2022",
-    url: "#",
-  },
-  {
-    title:
-      "Sistema para a identificação de aglomerações operando em Redes IoT e Fog Computing",
-    authors:
-      "Bruno Schollas Soares Dias, Francisco de Caldas Filho, Ian Porto e Mello, Fábio L. L. de Mendonça, Rafael Zerbini, Rafael de Sousa Jr.",
-    venue: "SBrT",
-    year: "2022",
-    url: "#",
-  },
-  {
-    title:
-      "Design and Evaluation of a Data Collector and Analyzer to Monitor the COVID-19 and other Epidemic Outbreaks",
-    authors:
-      "Lucas Coelho de Almeida, Francisco de Caldas Filho, Natália Andrade Marques, Fábio L. L. de Mendonça, Daniel Prado, Rafael de Sousa Jr.",
-    venue: "ICITS",
-    year: "2021",
-    url: "#",
-  },
-];
+const HighlightMatch = ({ text, highlight }) => {
+  if (!highlight.trim()) {
+    return <span>{text}</span>;
+  }
+
+  const regex = new RegExp(`(${highlight})`, "gi");
+
+  const parts = text.split(regex);
+
+  return (
+    <span>
+      {parts.map((part, index) =>
+        part.toLowerCase() === highlight.toLowerCase() ? (
+          <mark key={index}>{part}</mark>
+        ) : (
+          <span key={index}>{part}</span>
+        )
+      )}
+    </span>
+  );
+};
 
 const Publications = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -47,7 +32,8 @@ const Publications = () => {
     (pub) =>
       pub.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       pub.authors.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      pub.year.includes(searchTerm)
+      String(pub.year).includes(searchTerm) ||
+      pub.venue.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -73,14 +59,20 @@ const Publications = () => {
               <article key={index} className="publication-entry">
                 <h2>
                   <a href={pub.url} target="_blank" rel="noopener noreferrer">
-                    {pub.title}
+                    {" "}
+                    <HighlightMatch text={pub.title} highlight={searchTerm} />
                   </a>
                 </h2>
                 <p className="publication-meta">
-                  Publicado: {pub.year}, {pub.venue}
+                  Publicado: {""}
+                  <HighlightMatch
+                    text={pub.year}
+                    highlight={searchTerm}
+                  />, <HighlightMatch text={pub.venue} highlight={searchTerm} />
                 </p>
                 <p className="publication-authors">
-                  <strong>Autor:</strong> {pub.authors}
+                  <strong>Autor:</strong> {""}
+                  <HighlightMatch text={pub.authors} highlight={searchTerm} />
                 </p>
               </article>
             ))}

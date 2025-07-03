@@ -1,10 +1,7 @@
-/* src/components/Navbar/Navbar.css */
-
-/* Variáveis de cor para fácil customização */
 :root {
-  --navbar-bg-color: #6f71bc; /* Cor de fundo roxa/azulada da imagem */
-  --navbar-text-color: #ffffff; /* Cor do texto e logo */
-  --navbar-hover-color: #5634a4; /* Cor do texto ao passar o mouse */
+  --navbar-bg-color: #6f71bc;
+  --navbar-text-color: #ffffff;
+  --navbar-hover-color: #5634a4;
 }
 
 .navbar {

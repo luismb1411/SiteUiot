@@ -7,105 +7,19 @@ import IconLinkedin from "../assets/Icons/IconLinkedin.svg";
 import IconLattes from "../assets/Icons/IconLattes.svg";
 import IconEmail from "../assets/Icons/IconEmail.svg";
 
-const coordinatorsData = [
-  {
-    avatar: IconAvatar,
-    name: "Francisco Lopes",
-    title: "Professor da Universidade De Brasília",
-    role: "Coordenador dos projetos de Segurança e Middleware do Uiot",
-    socials: { linkedin: "#", email: "#", github: "#", lattes: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Fábio L. L. de Mendonça",
-    title: "Professor da Universidade De Brasília",
-    role: "Coordenador dos projetos de Segurança e Middleware do Uiot",
-    socials: { linkedin: "#", email: "#", github: "#", lattes: "#" },
-  },
-];
-
-const supervisorsData = [
-  {
-    avatar: IconAvatar,
-    name: "Francisco Lopes",
-    title: "Professor da Universidade De Brasília",
-    role: "Coordenador dos projetos de Segurança e Middleware do Uiot",
-    socials: { linkedin: "#", email: "#", github: "#", lattes: "#" },
-  },
-  // Adicione mais supervisores aqui...
-];
-
-const membersData = [
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  // Adicione os outros 7 membros aqui para replicar o design...
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-];
+import { coordinatorsData } from "../Data/TeamData";
+import { supervisorsData } from "../Data/TeamData";
+import { membersData } from "../Data/TeamData";
 
 const Team = () => {
   return (
     <main className="team-page">
-      {/* Seção 1: Título Principal */}
       <section className="section team-page-header">
         <div className="container">
           <h1>Nossa equipe</h1>
         </div>
       </section>
 
-      {/* Seção 2: Listas de Coordenadores, Supervisores e Membros */}
       <section className="section team-page-content">
         <div className="container">
           {/* Categoria: Coordenadores */}
@@ -141,12 +55,10 @@ const Team = () => {
             ))}
           </div>
 
-          {/* Categoria: Supervisores */}
           <h2 className="team-category-title">Supervisores</h2>
           <div className="team-list">
             {supervisorsData.map((person, index) => (
               <div className="team-list-item" key={`sup-${index}`}>
-                {/* A estrutura é idêntica à de Coordenadores */}
                 <img
                   src={person.avatar}
                   alt={`Avatar de ${person.name}`}
@@ -175,7 +87,6 @@ const Team = () => {
             ))}
           </div>
 
-          {/* Categoria: Membros */}
           <h2 className="team-category-title">Membros</h2>
           <div className="team-grid">
             {membersData.map((member, index) => (

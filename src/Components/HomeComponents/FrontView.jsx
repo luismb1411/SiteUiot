@@ -1,6 +1,7 @@
 import "./FrontView.css";
 
 import HomeUiot from "../../assets/Images/HomeUiot.png";
+import { Link } from "react-router-dom";
 
 const FrontView = () => {
   return (
@@ -13,7 +14,9 @@ const FrontView = () => {
               Somos um grupo de pesquisa formado por alunos e professores da
               Universidade de Brasília.
             </p>
-            <button className="frontview-cta-button">Saiba mais</button>
+            <Link to="About" className="frontview-cta-button">
+              Saiba mais
+            </Link>
           </div>
 
           <div className="frontview-image-container">

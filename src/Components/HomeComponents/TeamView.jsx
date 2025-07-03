@@ -9,56 +9,7 @@ import IconLattes from "../../assets/Icons/IconLattes.svg";
 import IconEmail from "../../assets/Icons/IconEmail.svg";
 import IconArrow from "../../assets/Icons/IconArrow.svg";
 
-const teamData = [
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "#",
-      linkedin: "#",
-      lattes: "#",
-      email: "mailto:luis.mb1411@gmail.com",
-    },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "#",
-      linkedin: "#",
-      lattes: "#",
-      email: "mailto:email@example.com",
-    },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "#",
-      linkedin: "#",
-      lattes: "#",
-      email: "mailto:email@example.com",
-    },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "#",
-      linkedin: "#",
-      lattes: "#",
-      email: "mailto:email@example.com",
-    },
-  },
-];
+import { membersData } from "../../Data/TeamData";
 
 const TeamView = () => {
   return (
@@ -71,7 +22,7 @@ const TeamView = () => {
           </div>
 
           <div className="team-grid">
-            {teamData.map((member, index) => (
+            {membersData.slice(0, 4).map((member, index) => (
               <div className="team-card" key={index}>
                 <img
                   src={member.avatar}

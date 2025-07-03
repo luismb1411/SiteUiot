@@ -1,8 +1,7 @@
 .team-page {
-  padding-top: 80px; /* Compensa a navbar fixa */
+  padding-top: 80px;
 }
 
-/* --- Título Principal da Página --- */
 .team-page-header {
   background-color: #6f71bc;
   color: #ffffff;
@@ -16,7 +15,6 @@
   margin: 0;
 }
 
-/* --- Conteúdo Principal da Página (listas e grids) --- */
 .team-page-content {
   background-color: #6f71bc;
   color: #ffffff;
@@ -27,13 +25,12 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 2.5rem;
-  margin-top: 0; /* Removido para ser controlado pelo padding da seção */
+  margin-top: 0;
 }
 .team-page-content .container > h2:not(:first-child) {
-  margin-top: 5rem; /* Adiciona espaço entre as categorias */
+  margin-top: 5rem;
 }
 
-/* --- Estilos para os Cards em Lista (Coordenadores/Supervisores) --- */
 .team-list {
   display: flex;
   flex-direction: column;
@@ -44,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: #e8e7f1; /* Roxo bem claro */
+  background-color: #ffffff;
   color: #1e293b;
   padding: 1.5rem;
   border-radius: 20px;
@@ -57,7 +54,7 @@
 }
 
 .list-item-info {
-  flex-grow: 1; /* Faz esta área ocupar o máximo de espaço */
+  flex-grow: 1;
 }
 
 .list-item-info p {
@@ -89,7 +86,6 @@
   opacity: 1;
 }
 
-/* --- Estilos para os Cards em Grid (Membros) --- */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

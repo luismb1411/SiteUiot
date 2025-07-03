@@ -20,5 +20,5 @@ body {
 }
 
 main > .section:first-child {
-  padding-top: calc(80px + 6rem); /* 80px da navbar + 96px de espaçamento */
+  padding-top: calc(80px + 6rem);
 }

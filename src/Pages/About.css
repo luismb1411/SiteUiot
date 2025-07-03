@@ -1,6 +1,6 @@
 .about-hero-section {
-  padding-top: 80px; /* Compensa a navbar fixa */
-  height: 45vh; /* Altura do banner (ajuste conforme necessário) */
+  padding-top: 80px;
+  height: 45vh;
   background-size: cover;
   background-position: center;
   display: flex;

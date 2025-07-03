@@ -5,7 +5,6 @@ import aboutBanner from "../assets/Images/aboutBanner.jpg";
 const About = () => {
   return (
     <main className="about-page">
-      {/* Seção 1: Banner do Topo */}
       <section
         className="about-hero-section"
         style={{ backgroundImage: `url(${aboutBanner})` }}
@@ -15,7 +14,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Seção 2: Conteúdo "Quem Somos" */}
       <section className="section about-content-section">
         <div className="container">
           <div className="about-header">
@@ -23,22 +21,31 @@ const About = () => {
           </div>
           <div className="about-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu
-              sapien sed massa ornare aliquam. Maecenas sed tempor dignissim.
-              Etiam tempus consequat nisl. Integer et turpis viverra, efficitur
-              nisl malesuada, euismod eros. Ut convallis ipsum lectus, sit amet
-              ultrices nibh dapibus a. Donec malesuada ac leo vitae tempus.
-              Phasellus fermentum tortor at sem aliquam finibus.
+              A Internet das Coisas (IoT) é o conceito de conectar objetos
+              físicos do dia a dia à internet, permitindo que eles coletem,
+              enviem e recebam dados. Basicamente, é dar "inteligência" e
+              capacidade de comunicação a itens que tradicionalmente não eram
+              digitais. Pense em uma geladeira que avisa no seu celular quando
+              um alimento está acabando, um relógio que monitora sua saúde e
+              envia relatórios ao seu médico, ou sensores em uma plantação que
+              informam o momento exato de irrigar o solo. O objetivo da IoT é
+              criar uma ponte entre o mundo físico e o digital, permitindo
+              monitorar e controlar objetos remotamente, automatizar tarefas e
+              gerar informações valiosas para tornar nossas casas, cidades e
+              indústrias mais eficientes, seguras e convenientes.
             </p>
             <p>
-              Ut ornare id ex in posuere. Nam nec aliquam nisi. Ut sit amet
-              augue tortor. Etiam rutrum nunc elementum ultricies bibendum.
-              Vivamus in mauris blandit, ultricies mauris sit amet, pharetra
-              metus. Vivamus mollis velit et dignissim interd Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Fusce eu sapien sed massa
-              ornare aliquam. Maecenas sed tempor dignissim. Etiam tempus
-              consequat nisl. Integer et turpis viverra, efficitur nisl
-              malesuada, euismod eros.
+              O Laboratório de Pesquisa UIoT é um centro de inovação e
+              investigação científica dedicado à Internet das Coisas (IoT),
+              sediado na prestigiosa Universidade de Brasília (UnB). Formado por
+              uma equipe colaborativa e multidisciplinar de professores,
+              pesquisadores e estudantes da UnB, o laboratório tem como missão
+              principal aprofundar o conhecimento e explorar novas fronteiras em
+              aplicações que impactam diretamente a sociedade. Nosso grande
+              diferencial reside na abordagem holística que aplicamos aos nossos
+              projetos. No UIoT, não nos limitamos a um único aspecto da
+              tecnologia; nós desenvolvemos a solução completa, gerenciando todo
+              o ciclo de vida de um produto ou serviço IoT.
             </p>
           </div>
         </div>

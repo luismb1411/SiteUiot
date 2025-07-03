@@ -31,12 +31,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/sobre">
+                <Link to="/About">
                   <img src={IconArrowR} alt="seta" /> Sobre
                 </Link>
               </li>
               <li>
-                <Link to="/projetos">
+                <Link to="/Project">
                   <img src={IconArrowR} alt="seta" /> Projetos
                 </Link>
               </li>
@@ -46,12 +46,12 @@ const Footer = () => {
           <div className="footer-column links">
             <ul>
               <li>
-                <Link to="/publicacoes">
+                <Link to="/Publications">
                   <img src={IconArrowR} alt="seta" /> Publicações
                 </Link>
               </li>
               <li>
-                <Link to="/equipe">
+                <Link to="/Team">
                   <img src={IconArrowR} alt="seta" /> Equipe
                 </Link>
               </li>

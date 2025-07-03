@@ -13,7 +13,6 @@ const Navbar = () => {
 
         <ul className="nav-menu">
           <li className="nav-item">
-            {/* Troque a tag <a> por <Link> e "href" por "to" */}
             <Link to="/" className="nav-link">
               Início
             </Link>
