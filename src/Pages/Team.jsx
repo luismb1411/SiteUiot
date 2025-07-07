@@ -39,22 +39,22 @@ const Team = () => {
                 </div>
                 <div className="list-item-socials">
                   {person.socials.linkedin && (
-                    <a href={person.socials.linkedin}>
+                    <a href={person.socials.linkedin} target="_blank">
                       <img src={IconLinkedin} alt="LinkedIn" />
                     </a>
                   )}
                   {person.socials.email && (
-                    <a href={person.socials.email}>
+                    <a href={person.socials.email} target="_blank">
                       <img src={IconEmail} alt="Email" />
                     </a>
                   )}
                   {person.socials.github && (
-                    <a href={person.socials.github}>
+                    <a href={person.socials.github} target="_blank">
                       <img src={IconGithub} alt="GitHub" />
                     </a>
                   )}
                   {person.socials.lattes && (
-                    <a href={person.socials.lattes}>
+                    <a href={person.socials.lattes} target="_blank">
                       <img src={IconLattes} alt="Lattes" />
                     </a>
                   )}
@@ -79,22 +79,22 @@ const Team = () => {
                 </div>
                 <div className="list-item-socials">
                   {person.socials.linkedin && (
-                    <a href={person.socials.linkedin}>
+                    <a href={person.socials.linkedin} target="_blank">
                       <img src={IconLinkedin} alt="LinkedIn" />
                     </a>
                   )}
                   {person.socials.email && (
-                    <a href={person.socials.email}>
+                    <a href={person.socials.email} target="_blank">
                       <img src={IconEmail} alt="Email" />
                     </a>
                   )}
                   {person.socials.github && (
-                    <a href={person.socials.github}>
+                    <a href={person.socials.github} target="_blank">
                       <img src={IconGithub} alt="GitHub" />
                     </a>
                   )}
                   {person.socials.lattes && (
-                    <a href={person.socials.lattes}>
+                    <a href={person.socials.lattes} target="_blank">
                       <img src={IconLattes} alt="Lattes" />
                     </a>
                   )}
@@ -117,22 +117,22 @@ const Team = () => {
                 <p className="member-card-status">{member.status}</p>
                 <div className="member-card-socials">
                   {member.socials.linkedin && (
-                    <a href={member.socials.linkedin}>
+                    <a href={member.socials.linkedin} target="_blank">
                       <img src={IconLinkedin} alt="LinkedIn" />
                     </a>
                   )}
                   {member.socials.email && (
-                    <a href={member.socials.email}>
+                    <a href={member.socials.email} target="_blank">
                       <img src={IconEmail} alt="Email" />
                     </a>
                   )}
                   {member.socials.github && (
-                    <a href={member.socials.github}>
+                    <a href={member.socials.github} target="_blank">
                       <img src={IconGithub} alt="GitHub" />
                     </a>
                   )}
                   {member.socials.lattes && (
-                    <a href={member.socials.lattes}>
+                    <a href={member.socials.lattes} target="_blank">
                       <img src={IconLattes} alt="Lattes" />
                     </a>
                   )}
