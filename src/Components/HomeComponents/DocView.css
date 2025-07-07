@@ -66,3 +66,9 @@
   color: #1e293b;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+}

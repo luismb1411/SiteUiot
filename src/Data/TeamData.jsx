@@ -3,22 +3,34 @@ import IconAvatar from "../assets/Icons/IconAvatar.svg";
 export const coordinatorsData = [
   {
     avatar: IconAvatar,
+    name: "Fábio L. L. de Mendonça",
+    title: "Professor da Universidade De Brasília",
+    role: "Coordenador geral do Uiot",
+    socials: { linkedin: "", email: "", github: "", lattes: "" },
+  },
+  {
+    avatar: IconAvatar,
     name: "Francisco Lopes de Caldas Filho",
     title: "Professor da Universidade De Brasília",
     role: "Coordenador dos projetos de Segurança e Software do Uiot",
     socials: {
-      linkedin: "#",
-      email: "#",
-      github: "#",
+      linkedin: "",
+      email: "",
+      github: "",
       lattes: "http://lattes.cnpq.br/1769205568038271",
     },
   },
   {
     avatar: IconAvatar,
-    name: "Fábio L. L. de Mendonça",
+    name: "Cláudia Jacy Barenco Abbas",
     title: "Professor da Universidade De Brasília",
-    role: "Coordenador geral do Uiot",
-    socials: { linkedin: "#", email: "#", github: "#", lattes: "#" },
+    role: "Coordenadora dos projetos de Container",
+    socials: {
+      linkedin: "",
+      email: "",
+      github: "",
+      lattes: "http://lattes.cnpq.br/2433035330157054",
+    },
   },
 ];
 
@@ -28,7 +40,13 @@ export const supervisorsData = [
     name: "Anna Carolina",
     title: "Estudante de pos-graduação de Redes",
     role: "Supervisora da equipe de Software",
-    socials: { linkedin: "#", email: "#", github: "#", lattes: "#" },
+    socials: {
+      linkedin:
+        "https://www.linkedin.com/in/anna-carolina-ferreira-rosa-a72731212",
+      email: "mailto:anna.rosa@uiot.org",
+      github: "",
+      lattes: "",
+    },
   },
 ];
 
@@ -52,9 +70,9 @@ export const membersData = [
     role: "Equipe de Segurança",
     status: "Graduando de Engenharia de Redes",
     socials: {
-      github: "#",
+      github: "",
       linkedin: "https://www.linkedin.com/in/juan-carlos-cordir-silva-905692a7",
-      lattes: "#",
+      lattes: "",
       email: "mailto:cordir@live.com",
     },
   },
@@ -64,45 +82,34 @@ export const membersData = [
     role: "Equipe de Container",
     status: "Graduando de Engenharia de Redes",
     socials: {
-      github: "#",
-      linkedin: "#",
+      github: "",
+      linkedin: "",
       lattes: "http://lattes.cnpq.br/4039249040057623",
       email: "mailto:abeatrizznascimento@gmail.com",
     },
   },
   {
     avatar: IconAvatar,
-    name: "Luis Miguel",
+    name: "Luis Guilherme Leal",
     role: "Equipe de Software",
     status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
+    socials: {
+      github: "https://github.com/Guilherme5342",
+      linkedin: "https://www.linkedin.com/in/guilhermelealmedeiros/",
+      lattes: "",
+      email: "mailto:guilherme.leal.5342@gmail.com",
+    },
   },
   {
     avatar: IconAvatar,
-    name: "Luis Miguel",
+    name: "Victor Baião Pires ",
     role: "Equipe de Software",
     status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Luis Miguel",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: { github: "#", linkedin: "#", lattes: "#", email: "#" },
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/victor-baião-pires",
+      lattes: "",
+      email: "mailto:victorbaiao14@gmail.com",
+    },
   },
 ];

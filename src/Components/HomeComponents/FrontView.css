@@ -54,3 +54,15 @@
   max-width: 100%;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .frontview-section .container {
+    flex-direction: column; /* Empilha o texto e a imagem */
+    text-align: center; /* Centraliza o conteúdo */
+    gap: 2rem;
+  }
+
+  .frontview-content h1 {
+    font-size: 2.5rem; /* Diminui o tamanho do título */
+  }
+}

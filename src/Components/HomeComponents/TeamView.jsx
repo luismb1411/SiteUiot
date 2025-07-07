@@ -33,30 +33,26 @@ const TeamView = () => {
                 <p className="member-role">{member.role}</p>
                 <p className="member-status">{member.status}</p>
                 <div className="member-socials">
-                  <a
-                    href={member.socials.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={IconGithub} alt="GitHub" />
-                  </a>
-                  <a
-                    href={member.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={IconLinkedin} alt="LinkedIn" />
-                  </a>
-                  <a
-                    href={member.socials.lattes}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={IconLattes} alt="Lattes" />
-                  </a>
-                  <a href={member.socials.email}>
-                    <img src={IconEmail} alt="Email" />
-                  </a>
+                  {member.socials.linkedin && (
+                    <a href={member.socials.linkedin}>
+                      <img src={IconLinkedin} alt="LinkedIn" />
+                    </a>
+                  )}
+                  {member.socials.email && (
+                    <a href={member.socials.email}>
+                      <img src={IconEmail} alt="Email" />
+                    </a>
+                  )}
+                  {member.socials.github && (
+                    <a href={member.socials.github}>
+                      <img src={IconGithub} alt="GitHub" />
+                    </a>
+                  )}
+                  {member.socials.lattes && (
+                    <a href={member.socials.lattes}>
+                      <img src={IconLattes} alt="Lattes" />
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

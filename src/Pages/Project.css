@@ -74,3 +74,9 @@
   color: #475467;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .project-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

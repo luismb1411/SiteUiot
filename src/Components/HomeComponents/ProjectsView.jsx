@@ -29,7 +29,7 @@ const projectsData = [
     icon: iconConteiner,
     title: "Conteiner",
     description:
-      "Lorem ipsum dolor sit amet. Ut pariatur earum est quae facilis sit voluptatibus quisquam.",
+      "Empacota a aplicação em um ambiente isolado, garantindo sua implantação rápida, consistente e escalável em qualquer infraestrutura.",
   },
 ];
 
@@ -38,15 +38,12 @@ const ProjectsView = () => {
     <div>
       <section className="projects-section">
         <div className="projects-container">
-          {/* Cabeçalho da Seção */}
           <div className="projects-header">
             <h2>Projetos</h2>
             <p>No Uiot desenvolvemos projetos em diversas áreas</p>
           </div>
 
-          {/* Grid de Cards */}
           <div className="projects-grid">
-            {/* 3. Use .map() para criar um card para cada item no array */}
             {projectsData.map((project, index) => (
               <div className="project-card" key={index}>
                 <img

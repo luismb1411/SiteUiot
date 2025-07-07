@@ -143,3 +143,20 @@
 .member-card-socials a:hover img {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .team-page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .team-list-item {
+    flex-direction: column; /* Empilha o card de lista */
+    text-align: center;
+  }
+
+  /* O grid de membros já usa 'auto-fit', então deve se adaptar bem,
+     mas podemos garantir que ele não fique muito pequeno. */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
