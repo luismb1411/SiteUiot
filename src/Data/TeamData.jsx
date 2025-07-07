@@ -59,7 +59,7 @@ export const membersData = [
     socials: {
       github: "https://github.com/luismb1411",
       linkedin:
-        "https://www.linkedin.com/in/lu%C3%ADs-miguel-undefined-16964334b/",
+        "https://www.linkedin.com/in/lu%C3%ADs-miguel-gon%C3%A7alves-barreiro-16964334b/",
       lattes: "http://lattes.cnpq.br/3075632397540347",
       email: "mailto:luis.mb1411@gmail.com",
     },
