@@ -34,22 +34,22 @@ const TeamView = () => {
                 <p className="member-status">{member.status}</p>
                 <div className="member-socials">
                   {member.socials.linkedin && (
-                    <a href={member.socials.linkedin}>
+                    <a href={member.socials.linkedin} target="_blank">
                       <img src={IconLinkedin} alt="LinkedIn" />
                     </a>
                   )}
                   {member.socials.email && (
-                    <a href={member.socials.email}>
+                    <a href={member.socials.email} target="_blank">
                       <img src={IconEmail} alt="Email" />
                     </a>
                   )}
                   {member.socials.github && (
-                    <a href={member.socials.github}>
+                    <a href={member.socials.github} target="_blank">
                       <img src={IconGithub} alt="GitHub" />
                     </a>
                   )}
                   {member.socials.lattes && (
-                    <a href={member.socials.lattes}>
+                    <a href={member.socials.lattes} target="_blank">
                       <img src={IconLattes} alt="Lattes" />
                     </a>
                   )}
