@@ -111,5 +111,16 @@ export const membersData = [
       lattes: "",
       email: "mailto:victorbaiao14@gmail.com",
     },
+     {
+    avatar: IconAvatar,
+    name: "Gabriel Filipe de Oliveira",
+    role: "Equipe de Segurança",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/gabriel-filipe-55002415a/",
+      lattes: "",
+      email: "mailto:gabriel.cardoso@uiot.org",
+    },
   },
 ];
