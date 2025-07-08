@@ -114,7 +114,7 @@ export const membersData = [
   },
   {
     avatar: IconAvatar,
-    name: "Gabriel Filipe de Oliveira",
+    name: "Gabriel Filipe",
     role: "Equipe de Segurança",
     status: "Graduando de Engenharia de Redes",
     socials: {
