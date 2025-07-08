@@ -111,7 +111,8 @@ export const membersData = [
       lattes: "",
       email: "mailto:victorbaiao14@gmail.com",
     },
-     {
+  },
+  {
     avatar: IconAvatar,
     name: "Gabriel Filipe de Oliveira",
     role: "Equipe de Segurança",
