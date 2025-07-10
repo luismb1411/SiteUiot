@@ -6,7 +6,12 @@ export const coordinatorsData = [
     name: "Fábio L. L. de Mendonça",
     title: "Professor da Universidade De Brasília",
     role: "Coordenador geral do Uiot",
-    socials: { linkedin: "", email: "", github: "", lattes: "" },
+    socials: {
+      linkedin: "",
+      email: "",
+      github: "",
+      lattes: "http://lattes.cnpq.br/6801714487611163",
+    },
   },
   {
     avatar: IconAvatar,
@@ -14,7 +19,8 @@ export const coordinatorsData = [
     title: "Professor da Universidade De Brasília",
     role: "Coordenador dos projetos de Segurança e Software do Uiot",
     socials: {
-      linkedin: "",
+      linkedin:
+        "https://www.linkedin.com/in/francisco-lopes-de-c-filho-b0255224/",
       email: "",
       github: "",
       lattes: "http://lattes.cnpq.br/1769205568038271",
@@ -26,7 +32,8 @@ export const coordinatorsData = [
     title: "Professor da Universidade De Brasília",
     role: "Coordenadora dos projetos de Container",
     socials: {
-      linkedin: "",
+      linkedin:
+        "https://www.linkedin.com/in/claudia-jacy-barenco-abbas-dr-67727b1a/",
       email: "",
       github: "",
       lattes: "http://lattes.cnpq.br/2433035330157054",
@@ -59,7 +66,7 @@ export const membersData = [
     socials: {
       github: "https://github.com/luismb1411",
       linkedin:
-        "https://www.linkedin.com/in/lu%C3%ADs-miguel-undefined-16964334b/",
+        "https://www.linkedin.com/in/lu%C3%ADs-miguel-gon%C3%A7alves-barreiro-16964334b/",
       lattes: "http://lattes.cnpq.br/3075632397540347",
       email: "mailto:luis.mb1411@gmail.com",
     },
@@ -110,6 +117,30 @@ export const membersData = [
       linkedin: "https://www.linkedin.com/in/victor-baião-pires",
       lattes: "",
       email: "mailto:victorbaiao14@gmail.com",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Gabriel Filipe",
+    role: "Equipe de Segurança",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/gabriel-filipe-55002415a/",
+      lattes: "",
+      email: "mailto:gabriel.cardoso@uiot.org",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Caio Soares",
+    role: "Equipe de Software",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/caio-soares-rodrigues-70b3a3345/",
+      lattes: "",
+      email: "mailto:caiosoaresrodrigues26@gmail.com",
     },
   },
 ];

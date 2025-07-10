@@ -149,13 +149,13 @@
     font-size: 2.5rem;
   }
 
+  /* Faz o card de lista empilhar seus elementos */
   .team-list-item {
-    flex-direction: column; /* Empilha o card de lista */
+    flex-direction: column;
     text-align: center;
   }
 
-  /* O grid de membros já usa 'auto-fit', então deve se adaptar bem,
-     mas podemos garantir que ele não fique muito pequeno. */
+  /* Garante que o grid de membros vire uma coluna */
   .team-grid {
     grid-template-columns: 1fr;
   }

@@ -1,6 +1,5 @@
 .project-page {
-  /* O espaçamento vertical já é cuidado pela classe global .section */
-  background-color: #ffffff; /* Fundo branco para a página */
+  background-color: #ffffff;
 }
 
 .project-page-header {
@@ -11,13 +10,12 @@
 .project-page-header h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #6f71bc; /* Roxo padrão */
+  color: #6f71bc;
   display: inline-block;
   position: relative;
   padding-bottom: 0.75rem;
 }
 
-/* O sublinhado roxo abaixo do título */
 .project-page-header h1::after {
   content: "";
   position: absolute;
@@ -41,7 +39,7 @@
   align-items: flex-start;
   gap: 1.5rem;
   padding: 2rem;
-  border: 2px solid #6f71bc; /* Borda roxa */
+  border: 2px solid #6f71bc;
   border-radius: 24px;
   text-decoration: none;
   color: inherit;
@@ -78,5 +76,9 @@
 @media (max-width: 768px) {
   .project-page-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-page-header h1 {
+    font-size: 2.2rem;
   }
 }

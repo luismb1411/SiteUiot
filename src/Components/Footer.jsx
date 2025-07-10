@@ -61,7 +61,11 @@ const Footer = () => {
           <div className="footer-column social">
             <h4>Fique por dentro dos nos projetos</h4>
             <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/uiot/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={IconLinkedin} alt="LinkedIn" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">

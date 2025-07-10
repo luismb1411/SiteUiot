@@ -17,6 +17,7 @@
   z-index: 1000;
   padding-right: 4em;
 }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -63,4 +64,13 @@
 
 .nav-link:hover {
   color: var(--navbar-hover-color);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Esconde os links do menu em telas pequenas */
+  }
+
+  /* Futuramente, você adicionaria aqui o estilo
+     para um ícone de menu hamburger ficar visível */
 }

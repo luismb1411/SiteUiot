@@ -80,20 +80,22 @@
   opacity: 1;
 }
 
-/* Para tablets */
 @media (max-width: 992px) {
   .footer-container {
-    /* Muda para 2 colunas */
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
   }
 }
 
-/* Para celulares */
 @media (max-width: 768px) {
   .footer-container {
-    /* Empilha tudo em 1 coluna */
     grid-template-columns: 1fr;
     text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
   }
 }
