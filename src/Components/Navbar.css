@@ -73,4 +73,16 @@
 
   /* Futuramente, você adicionaria aqui o estilo
      para um ícone de menu hamburger ficar visível */
+  .navbar-container {
+    /* Torna o container uma referência para o posicionamento do logo */
+    position: relative;
+  }
+
+  .navbar-logo {
+    /* Posiciona o logo de forma absoluta em relação ao container */
+    position: absolute;
+    left: 50%;
+    /* Move o logo 50% da sua própria largura para a esquerda para centralizar perfeitamente */
+    transform: translateX(-50%);
+  }
 }

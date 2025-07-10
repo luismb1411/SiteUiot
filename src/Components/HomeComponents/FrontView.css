@@ -56,13 +56,40 @@
 }
 
 @media (max-width: 768px) {
-  .frontview-section .container {
+  .frontview-section {
+    /* Reduz o espaçamento em telas menores para não ocupar tanto espaço vertical */
+    padding-top: calc(80px + 4rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .frontview-container {
     flex-direction: column; /* Empilha o texto e a imagem */
-    text-align: center; /* Centraliza o conteúdo */
-    gap: 2rem;
+    text-align: center; /* Centraliza o conteúdo (texto e botão) */
+    gap: 3rem; /* Aumenta o espaço entre a imagem e o texto */
   }
 
   .frontview-content h1 {
-    font-size: 2.2rem; /* Diminui o tamanho do título principal */
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte do título para telas menores */
+  }
+
+  .frontview-section > img {
+    /* Se o logo for um SVG diretamente dentro da section */
+    display: block;
+    margin: 0 auto 2rem auto; /* Centraliza horizontalmente e adiciona margem abaixo */
+  }
+
+  /* Se o seu logo estiver dentro de uma div específica, use essa classe */
+  .frontview-logo {
+    display: block;
+    text-align: center; /* Tenta centralizar se o logo estiver dentro de um elemento de texto */
+    margin-bottom: 2rem;
+  }
+
+  .frontview-logo img,
+  .frontview-logo svg {
+    display: block; /* Garante que a margem auto funcione */
+    margin: 0 auto; /* Centraliza horizontalmente */
   }
 }

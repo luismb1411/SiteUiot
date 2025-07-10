@@ -59,3 +59,36 @@
   text-align: justify;
   margin-bottom: 1.5rem;
 }
+
+@media (max-width: 768px) {
+  /* --- Problema 1: Imagem cortada pela Navbar --- */
+  .about-page {
+    /*
+      Move a página inteira para baixo para compensar
+      a altura da navbar (80px). Isso revela o topo da imagem.
+    */
+    padding-top: 80px;
+  }
+
+  /* --- Problema 2: Imagem não preenche a tela --- */
+  .about-hero-section {
+    /* Garante que a seção ocupe toda a largura, sem margens laterais */
+    width: 100%;
+    /* Remove o padding-top que estava aqui antes, pois agora a classe .about-page cuida disso */
+    padding-top: 0;
+    /* Ajusta a altura para telas menores */
+    height: 35vh;
+  }
+
+  .about-hero-section h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  /* --- Problema 3: Texto cortado nas laterais --- */
+  .about-text p {
+    /* Adiciona espaçamento interno para o texto não colar nas bordas */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
