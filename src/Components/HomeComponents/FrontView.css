@@ -73,23 +73,4 @@
   .frontview-content h1 {
     font-size: 2.5rem; /* Ajusta o tamanho da fonte do título para telas menores */
   }
-
-  .frontview-section > img {
-    /* Se o logo for um SVG diretamente dentro da section */
-    display: block;
-    margin: 0 auto 2rem auto; /* Centraliza horizontalmente e adiciona margem abaixo */
-  }
-
-  /* Se o seu logo estiver dentro de uma div específica, use essa classe */
-  .frontview-logo {
-    display: block;
-    text-align: center; /* Tenta centralizar se o logo estiver dentro de um elemento de texto */
-    margin-bottom: 2rem;
-  }
-
-  .frontview-logo img,
-  .frontview-logo svg {
-    display: block; /* Garante que a margem auto funcione */
-    margin: 0 auto; /* Centraliza horizontalmente */
-  }
 }

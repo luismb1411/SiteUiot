@@ -23,6 +23,7 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* AS DUAS COLUNAS DE LINKS FORAM UNIFICADAS NESTA ÚNICA COLUNA */}
           <div className="footer-column links">
             <ul>
               <li>
@@ -40,11 +41,6 @@ const Footer = () => {
                   <img src={IconArrowR} alt="seta" /> Projetos
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          <div className="footer-column links">
-            <ul>
               <li>
                 <Link to="/Publications">
                   <img src={IconArrowR} alt="seta" /> Publicações

@@ -5,84 +5,141 @@
 }
 
 .navbar {
-  background-color: #6f71bc;
+  background-color: var(--navbar-bg-color);
   height: 80px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  padding-right: 4em;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  padding: 0 2rem;
+  height: 100%;
+  padding: 0 1.5rem;
+  position: relative;
 }
 
+/* --- ESTILOS PADRÃO PARA DESKTOP --- */
+
 .navbar-logo {
-  color: var(--navbar-text-color);
-  justify-self: start;
-  cursor: pointer;
-  text-decoration: none;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .navbar-logo img {
   height: 100px;
-  width: 100px;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  list-style: none;
-  text-align: center;
+  list-style: none; /* Remove os marcadores (bolinhas) */
+  margin: 0 0 0 auto; /* Remove margem padrão e alinha à direita */
+  padding: 0;
   gap: 2rem;
 }
 
 .nav-item {
-  height: 80px;
+  height: 80px; /* Ocupa a altura total da navbar */
   display: flex;
-  align-items: center;
+  align-items: center; /* Centraliza o link verticalmente */
 }
 
 .nav-link {
   color: var(--navbar-text-color);
   text-decoration: none;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
-  transition: color 0.3s ease-out;
 }
 
-.nav-link:hover {
-  color: var(--navbar-hover-color);
+.menu-icon {
+  display: none; /* Ícone do hambúrguer fica escondido no desktop */
 }
+
+/* ================================================= */
+/* --- ESTILOS PARA MOBILE (Telas até 768px) --- */
+/* ================================================= */
 
 @media (max-width: 768px) {
-  .nav-menu {
-    display: none; /* Esconde os links do menu em telas pequenas */
-  }
-
-  /* Futuramente, você adicionaria aqui o estilo
-     para um ícone de menu hamburger ficar visível */
-  .navbar-container {
-    /* Torna o container uma referência para o posicionamento do logo */
-    position: relative;
-  }
-
+  /* Centraliza a logo e ajusta seu tamanho */
   .navbar-logo {
-    /* Posiciona o logo de forma absoluta em relação ao container */
     position: absolute;
     left: 50%;
-    /* Move o logo 50% da sua própria largura para a esquerda para centralizar perfeitamente */
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar-logo img {
+    height: 65px;
+  }
+
+  /* Mostra o ícone do menu */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 28px;
+    height: 3px;
+    background-color: var(--navbar-text-color);
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  /* Esconde o menu de texto do desktop */
+  .nav-menu {
+    display: none;
+  }
+
+  /* Estilos do menu suspenso quando está ativo */
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--navbar-bg-color);
+    z-index: 999;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    padding-top: calc(80px + 2rem);
+  }
+
+  .nav-menu.active::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-item {
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    padding: 0.75rem 0;
   }
 }
